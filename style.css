@@ -1,78 +1,109 @@
-.a, .b, .d {
+header {
+    grid-area: cabecalho;
+}
+
+main {
+    grid-area: conteudo;
+}
+
+footer {
+    grid-area: rodape;
+}
+
+body {
+    font-family: arial,sans-serif;
+
+    display: grid;
+    margin: 0px;
+    min-height: 100vh;
+    grid-template-rows: 50px 500px 80px;
+    grid-template-areas: 'cabecalho' 'conteudo' 'rodape';
+}
+
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.logo,
+.pesquisa,
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+}
+
+.lugar {
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+    text-align: start;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 40px;
+}
+
+.rodape {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.rodape div:nth-child(1) {
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.rodape div:nth-child(2) {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+       
+.a, 
+.b, 
+.d {
     font-size: 13px;
     text-align: center;
     font-family: arial, sans-serif;
     color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
 }
-
+        
 .c {
     height: 30px;
     width: 30px;
 }
 
 .d {
-    text-decoration: none;
     background: #4285f4;
     border-radius: 3px;
     color: white;
     padding: 9px;
 }
 
-.cabeçalho {
-    display: flex;
-    align-items: inherit;
-    position: absolute;
-    right: 10px;
-    margin: 10px;
-}
-
-.a1, .b1, .d1 {
+.a1, 
+.b1, 
+.d1 {
     display: inline-block;
     padding: 7px;
 }
 
-.logo {
-    margin: 0 auto;
-    width: 300px;
-    padding: 20px;
+.l1,
+.l2,
+.l3,
+.l4,
+.l5,
+.l6,
+.l7 {
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+    text-align: center;
+    text-decoration: none;
+    padding: 7px;
 }
-
-.pesquisa {
-    margin: 0 auto;
-    width: 300px;
-    padding: 20px;
-    background-color: khaki;
-}
-
-.p {
-    
-}
-
-.botoes {
-    margin: 0 auto;
-    width: 300px;
-}
-
-.rodape {
-    background-color: #f2f2f2;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    padding: 20px;
-}
-
-.ladoEsquerdo {
-    background-color: #f2f2f2;
-    display: inline-block;
-    position: absolute;
-    left: 25px;
-}
-
-.ladoDireito {
-    background-color: #f2f2f2;
-    display: inline-block;
-    position: absolute;
-    right: 25px;
-}
-
