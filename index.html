@@ -33,15 +33,29 @@
     <main>
         <div class="conteudo">
             <div class="logo">
-                <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                <img alt="Google"
+                    src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
                     style="padding-top:109px" width="272">
             </div>
             <div class="pesquisa">
-                <input class="p" type="text" title="Pesquisar">
+                <form action="pesquisar">
+                    <div class="p1">
+                            <img alt="pesquisar" 
+                            src="data:image/png;base64,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" 
+                            style="opacity: .80; justify-content: flex-start;" height="17px" width="17px">
+                        <input type="search" name="pesquisa" id="p1" title="Pesquisar">
+                        <img 
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaOJBNmXBwv-AkM7hui613scngEKUMyr4aEw&usqp=CAU"
+                        height="20px" width="20px">
+                        <img 
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRXnZfrsoMV0WBHUnjisKhOL1vnbmWcC25euA&usqp=CAU"
+                        height="20px" width="20px" style="margin-left: 20px;">
+                    </div>
+                </form>
             </div>
             <div class="botoes">
-                <button>Pesquisa Google</button>
-                <button>Estou com Sorte</button>
+                <div class="botao1">Pesquisa Google</div>
+                <div class="botao2">Estou com Sorte</div>
             </div>
         </div>
     </main>
