@@ -15,6 +15,7 @@ body {
 
     display: grid;
     margin: 0px;
+    height: 100%;
     max-height: 100vh;
     min-width: 100vh;
     grid-template-rows: 1fr 575px 1fr;
@@ -42,6 +43,10 @@ body {
     justify-content: center;
     align-items: center;
     padding: 18px;
+}
+
+.p1:hover {
+    box-shadow: 0 0 7px #c6c6c6;
 }
 
 .p1 {
@@ -112,13 +117,22 @@ body {
     padding-left: 30px;
 }
 
-.rodape {
+.menuRodape {
     display: flex;
     height: 40px;
     background-color: #f2f2f2;
     border: 1px solid #f2f2f2;
     justify-content: space-between;
     align-items: center;
+}
+
+.rodape {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    height: 80px;
+
 }
        
 .a, 
